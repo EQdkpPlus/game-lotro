@@ -22,9 +22,9 @@ if ( !defined('EQDKP_INC') ){
 
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
+		public $version	= '2.2.2';
 		protected $this_game	= 'lotro';
-		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles');
-		public $icons			= array('3dmodel', 'classes', 'classes_big', 'events', 'races');
+		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
 		protected $classes		= array();
 		protected $races		= array();
 		protected $factions		= array();
@@ -43,12 +43,174 @@ if(!class_exists('lotro')) {
 			'import_data_cache'	=> true,									// Is the data cached and requires a reset call?
 		);
 		
+		
+		protected $class_dependencies = array(
+			array(
+				'name'		=> 'faction',
+				'type'		=> 'factions',
+				'admin' 	=> true,
+				'decorate'	=> false,
+				'parent'	=> false,
+			),
+			array(
+				'name'		=> 'race',
+				'type'		=> 'races',
+				'admin'		=> false,
+				'decorate'	=> true,
+				'parent'	=> false
+			),
+			array(
+				'name'		=> 'class',
+				'type'		=> 'classes',
+				'admin'		=> false,
+				'decorate'	=> true,
+				'primary'	=> true,
+				'colorize'	=> true,
+				'roster'	=> true,
+				'recruitment' => true,
+				'parent'	=> array(
+					'race' => array(
+						0 	=> 'all',		// Unknown
+						1 	=> 'all',		// Man
+						2 	=> 'all',		// Man
+						3 	=> 'all',		// Elf
+						4 	=> 'all',		// Dwarf
+					),
+				),
+			),
+		);
+		
+		public $default_roles = array(
+			1	=> array(1,8),
+			2	=> array(6,7,9),
+			3	=> array(4,5),
+			4	=> array(3,7,8,9),
+			5	=> array(2)
+		);
+		
+		protected $class_colors = array(
+			1	=> '#FFCC33',
+			2	=> '#0033CC',
+			3	=> '#006600',
+			4	=> '#00CCFF',
+			5	=> '#444444',
+			6	=> '#990000',
+			7	=> '#CC3300',
+			8	=> '#1A3CAA',
+			9	=> '#FFF468'
+		);
 
 		protected $glang		= array();
 		protected $lang_file	= array();
 		protected $path			= '';
 		public  $lang			= false;
-		public $version	= '2.2.2';
+		
+
+		public function profilefields(){
+			$xml_fields = array(
+				'vocation'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'profession',
+					'lang'			=> 'vocation',
+					'options'		=> array('armourer' => 'Armourer', 'armsman' => 'Armsman', 'explorer' => 'Explorer', 'historian' => 'Historian', 'tinker' => 'Tinker', 'woodsman' => 'Woodsman', 'yeoman' => 'Yeoman'),
+					'undeletable'	=> true,
+				),
+	
+				'profession1'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'profession',
+					'lang'			=> 'profession1',
+					'options'		=> array('farmer' => 'Farmer', 'forester' => 'Forester', 'prospector' => 'Prospector', 'cook' => 'Cook', 'jeweller' => 'Jeweller', 'metalsmith' => 'Metalsmith', 'scholar' => 'Scholar', 'tailor' => 'Tailor', 'weaponsmith' => 'Weaponsmith', 'woodworker' => 'Woodworker'),
+					'undeletable'	=> true,
+				),
+				'profession2'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'profession',
+					'lang'			=> 'profession2',
+					'options'		=> array('farmer' => 'Farmer', 'forester' => 'Forester', 'prospector' => 'Prospector', 'cook' => 'Cook', 'jeweller' => 'Jeweller', 'metalsmith' => 'Metalsmith', 'scholar' => 'Scholar', 'tailor' => 'Tailor', 'weaponsmith' => 'Weaponsmith', 'woodworker' => 'Woodworker'),
+					'undeletable'	=> true,
+				),
+				'profession3'	=> array(
+					'type'			=> 'dropdown',
+					'category'		=> 'profession',
+					'lang'			=> 'profession3',
+					'options'		=> array('farmer' => 'Farmer', 'forester' => 'Forester', 'prospector' => 'Prospector', 'cook' => 'Cook', 'jeweller' => 'Jeweller', 'metalsmith' => 'Metalsmith', 'scholar' => 'Scholar', 'tailor' => 'Tailor', 'weaponsmith' => 'Weaponsmith', 'woodworker' => 'Woodworker'),
+					'undeletable'	=> true,
+				),
+	
+				'profession1_mastery'	=> array(
+					'type'			=> 'int',
+					'category'		=> 'profession',
+					'lang'			=> 'profession1_mastery',
+					'size'			=> 3,
+					'undeletable'	=> true,
+				),
+				'profession2_mastery'	=> array(
+					'type'			=> 'int',
+					'category'		=> 'profession',
+					'lang'			=> 'profession2_mastery',
+					'size'			=> 3,
+					'undeletable'	=> true,
+				),
+				'profession3_mastery'	=> array(
+					'type'			=> 'int',
+					'category'		=> 'profession',
+					'lang'			=> 'profession3_mastery',
+					'size'			=> 3,
+					'undeletable'	=> true,
+				),
+				'profession1_proficiency'	=> array(
+					'type'			=> 'int',
+					'category'		=> 'profession',
+					'lang'			=> 'profession1_proficiency',
+					'size'			=> 3,
+					'undeletable'	=> true,
+				),
+				'profession2_proficiency'	=> array(
+					'type'			=> 'int',
+					'category'		=> 'profession',
+					'lang'			=> 'profession2_proficiency',
+					'size'			=> 3,
+					'undeletable'	=> true,
+				),
+				'profession3_proficiency'	=> array(
+					'type'			=> 'int',
+					'category'		=> 'profession',
+					'lang'			=> 'profession3_proficiency',
+					'size'			=> 3,
+					'undeletable'	=> true,
+				),
+			);
+			return $xml_fields;
+		}
+
+		public function admin_settings() {
+			$settingsdata_admin = array(
+				'uc_faction'	=> array(
+					'lang'		=> 'uc_faction',
+					'type'		=> 'dropdown',
+					'options'	=> $this->game->get('factions'),
+					'default'	=> 'alliance'
+				),
+				'uc_server_loc'  => array(
+					'lang'		=> 'uc_server_loc',
+					'type' 		=> 'dropdown',
+					'options'	=> array('eu' => 'EU', 'us' => 'US'),
+				),
+				// TODO: check if apostrophe is saved correctly
+				'uc_servername'     => array(
+					'lang'			=> 'uc_servername',
+					'type'			=> 'text',
+					'size'			=> '21',
+					'autocomplete'	=> $this->game->get('realmlist'),
+				),
+				'uc_lockserver'	=> array(
+					'lang'		=> 'uc_lockserver',
+					'type'		=> 'radio',
+				)
+			);
+			return $settingsdata_admin;
+		}
 
 		/**
 		* Initialises filters
@@ -75,18 +237,6 @@ if(!class_exists('lotro')) {
 		}
 
 		public function get_OnChangeInfos($install=false){
-			//classcolors
-			$info['class_color'] = array(
-				1 => '#FFCC33',
-				2 => '#0033CC',
-				3 => '#006600',
-				4 => '#00CCFF',
-				5 => '#444444',
-				6 => '#990000',
-				7 => '#CC3300',
-				8 => '#1A3CAA',
-				9 => '#FFF468'
-			);
 
 			//Do this SQL Query NOT if the Eqdkp is installed -> only @ the first install
 			$info['aq'] = array();
