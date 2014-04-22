@@ -165,9 +165,9 @@ class guildImporter extends page_generic {
 		}else{
 			$dataarry = array(
 				'name'		=> $this->in->get('name',''),
-				'lvl'		=> $this->in->get('level', 0),
-				'classid'	=> $this->game->obj['ldata']->ConvertID($this->in->get('class', 0), 'int', 'classes'),
-				'raceid'	=> $this->game->obj['ldata']->ConvertID($this->in->get('race', 0), 'int', 'races'),
+				'level'		=> $this->in->get('level', 0),
+				'class'		=> $this->game->obj['ldata']->ConvertID($this->in->get('class', 0), 'int', 'classes'),
+				'race'		=> $this->game->obj['ldata']->ConvertID($this->in->get('race', 0), 'int', 'races'),
 			);
 			$myStatus = $this->pdh->put('member', 'addorupdate_member', array(0, $dataarry));
 			$successmsg = ($myStatus) ? 'imported' : 'failed';

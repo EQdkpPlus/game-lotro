@@ -153,9 +153,9 @@ class charImporter extends page_generic {
 			
 			$arrUpdateData = array(
 				'name'				=> $this->in->get('charname', ''),
-				'lvl'				=> $cdata['level'],
-				'raceid'			=> $this->game->obj['ldata']->ConvertID($cdata['race_id'], 'int', 'races'),
-				'classid'			=> $this->game->obj['ldata']->ConvertID($cdata['class_id'], 'int', 'classes'),
+				'level'				=> $cdata['level'],
+				'race'				=> $this->game->obj['ldata']->ConvertID($cdata['race_id'], 'int', 'races'),
+				'class'				=> $this->game->obj['ldata']->ConvertID($cdata['class_id'], 'int', 'classes'),
 				'guild'				=> $chardata['character']['guild']['@attributes']['name'],
 			);
 			
@@ -321,9 +321,9 @@ class charImporter extends page_generic {
 	public function perform_step2(){
 		$data = array(
 			'name'				=> $this->in->get('member_name'),
-			'lvl'				=> $this->in->get('member_level', 0),
-			'raceid'			=> $this->in->get('member_race_id', 0),
-			'classid'			=> $this->in->get('member_class_id', 0),
+			'level'				=> $this->in->get('member_level', 0),
+			'race'				=> $this->in->get('member_race_id', 0),
+			'class'				=> $this->in->get('member_class_id', 0),
 			'guild'				=> $this->in->get('guild',''),
 			'vocation'			=> $this->in->get('vocation', ''),
 			'profession1'		=> $this->in->get('profession1', ''),
