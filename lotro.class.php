@@ -236,10 +236,10 @@ if(!class_exists('lotro')) {
 			}
 		}
 
-		public function get_OnChangeInfos($install=false){
+		public function install($install=false){
 
 			//Do this SQL Query NOT if the Eqdkp is installed -> only @ the first install
-			$info['aq'] = array();
+			
 			if($install){
 				
 				array_push($info['aq'], "INSERT INTO `__events` (`event_id`, `event_name`, `event_value`, `event_added_by`, `event_updated_by`, `event_icon`) VALUES
