@@ -33,15 +33,20 @@ if(!class_exists('lotro')) {
 		public $objects			= array('lotro_data');
 		public $no_reg_obj		= array('lotro_data');	
 		
-		public $importers 		= array(
-			'char_import'		=> 'charimporter.php',						// filename of the character import
-			'char_update'		=> 'charimporter.php',						// filename of the character update, member_id (POST) is passed
-			'char_mupdate'		=> 'charimporter.php'.$this->SID.'&massupdate=true',		// filename of the "update all characters" aka mass update
-			'guild_import'		=> 'guildimporter.php',						// filename of the guild import
-			'import_reseturl'	=> 'charimporter.php'.$this->SID.'&resetcache=true',		// filename of the reset cache
-			'guild_imp_rsn'		=> true,									// Guild import & Mass update requires server name
-			'import_data_cache'	=> true,									// Is the data cached and requires a reset call?
-		);
+		
+		public function __construct() {
+			$this->importers 		= array(
+				'char_import'		=> 'charimporter.php',						// filename of the character import
+				'char_update'		=> 'charimporter.php',						// filename of the character update, member_id (POST) is passed
+				'char_mupdate'		=> 'charimporter.php'.$this->SID.'&massupdate=true',		// filename of the "update all characters" aka mass update
+				'guild_import'		=> 'guildimporter.php',						// filename of the guild import
+				'import_reseturl'	=> 'charimporter.php'.$this->SID.'&resetcache=true',		// filename of the reset cache
+				'guild_imp_rsn'		=> true,									// Guild import & Mass update requires server name
+				'import_data_cache'	=> true,									// Is the data cached and requires a reset call?
+			);
+			
+			parent::__construct();
+		}
 		
 		
 		protected $class_dependencies = array(
