@@ -4,15 +4,14 @@
  * License:		Creative Commons - Attribution-Noncommercial-Share Alike 3.0 Unported
  * Link:		http://creativecommons.org/licenses/by-nc-sa/3.0/
  * -----------------------------------------------------------------------
- * Began:		2009
  * Date:		$Date$
  * -----------------------------------------------------------------------
  * @author		$Author$
- * @copyright	2006-2011 EQdkp-Plus Developer Team
+ * @copyright	2006-2014 EQdkp-Plus Developer Team
  * @link		http://eqdkp-plus.com
  * @package		eqdkp-plus
  * @version		$Rev$
- * 
+ *
  * $Id$
  */
 
@@ -22,16 +21,17 @@ if ( !defined('EQDKP_INC') ){
 
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
-		public $version	= '2.2.2';
-		protected $this_game	= 'lotro';
-		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
-		protected $classes		= array();
-		protected $races		= array();
-		protected $factions		= array();
-		protected $filters		= array();
-		public  $langs			= array('english', 'german');
-		public $objects			= array('lotro_data');
-		public $no_reg_obj		= array('lotro_data');	
+		protected static $apiLevel	= 20;
+		public $version				= '2.2.2';
+		protected $this_game		= 'lotro';
+		protected $types			= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
+		protected $classes			= array();
+		protected $races			= array();
+		protected $factions			= array();
+		protected $filters			= array();
+		public  $langs				= array('english', 'german');
+		public $objects				= array('lotro_data');
+		public $no_reg_obj			= array('lotro_data');
 		
 		
 		public function __construct() {
@@ -120,7 +120,6 @@ if(!class_exists('lotro')) {
 					'options'		=> array('armourer' => 'Armourer', 'armsman' => 'Armsman', 'explorer' => 'Explorer', 'historian' => 'Historian', 'tinker' => 'Tinker', 'woodsman' => 'Woodsman', 'yeoman' => 'Yeoman'),
 					'undeletable'	=> true,
 				),
-	
 				'profession1'	=> array(
 					'type'			=> 'dropdown',
 					'category'		=> 'profession',
@@ -142,7 +141,6 @@ if(!class_exists('lotro')) {
 					'options'		=> array('farmer' => 'Farmer', 'forester' => 'Forester', 'prospector' => 'Prospector', 'cook' => 'Cook', 'jeweller' => 'Jeweller', 'metalsmith' => 'Metalsmith', 'scholar' => 'Scholar', 'tailor' => 'Tailor', 'weaponsmith' => 'Weaponsmith', 'woodworker' => 'Woodworker'),
 					'undeletable'	=> true,
 				),
-	
 				'profession1_mastery'	=> array(
 					'type'			=> 'int',
 					'category'		=> 'profession',
@@ -197,13 +195,13 @@ if(!class_exists('lotro')) {
 					'options'	=> $this->game->get('factions'),
 					'default'	=> 'alliance'
 				),
-				'uc_server_loc'  => array(
+				'uc_server_loc'	=> array(
 					'lang'		=> 'uc_server_loc',
 					'type' 		=> 'dropdown',
 					'options'	=> array('eu' => 'EU', 'us' => 'US'),
 				),
 				// TODO: check if apostrophe is saved correctly
-				'uc_servername'     => array(
+				'uc_servername'	=> array(
 					'lang'			=> 'uc_servername',
 					'type'			=> 'text',
 					'size'			=> '21',
@@ -217,11 +215,6 @@ if(!class_exists('lotro')) {
 			return $settingsdata_admin;
 		}
 
-		/**
-		* Initialises filters
-		*
-		* @param array $langs
-		*/
 		protected function load_filters($langs){
 			if(empty($this->classes)) {
 				$this->load_type('classes', $langs);
@@ -234,15 +227,14 @@ if(!class_exists('lotro')) {
 				}
 				$this->filters[$lang] = array_merge($this->filters[$lang], array(
 					array('name' => '-----------', 'value' => false),
-                    array('name' => $this->glang('heavy', true, $lang), 'value' => array(2 => 'class', 6 => 'class', 7 => 'class')),
-                    array('name' => $this->glang('medium', true, $lang), 'value' => array(3 => 'class', 5 => 'class', 9 => 'class')),
-                    array('name' => $this->glang('light', true, $lang), 'value' => array(1 => 'class', 4 => 'class', 8 => 'class')),
+					array('name' => $this->glang('heavy', true, $lang), 'value' => array(2 => 'class', 6 => 'class', 7 => 'class')),
+					array('name' => $this->glang('medium', true, $lang), 'value' => array(3 => 'class', 5 => 'class', 9 => 'class')),
+					array('name' => $this->glang('light', true, $lang), 'value' => array(1 => 'class', 4 => 'class', 8 => 'class')),
 				));
 			}
 		}
 
 		public function install($install=false){
-
 			$this->game->resetEvents();
 
 			$arrEventIDs = array();
@@ -329,7 +321,6 @@ if(!class_exists('lotro')) {
 			$intItempoolID = $this->game->addItempool("Default", "Default Itempool");
 
 			$this->game->addMultiDKPPool("Default", "Default MultiDKPPool", $arrEventIDs, array($intItempoolID));
-
 		}
 	}
 }
