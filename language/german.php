@@ -170,6 +170,8 @@ $german_array = array(
 		'uc_armory_updfailed'			=> 'Charakter nicht aktualisiert',
 		'uc_armory_impfail_reason'		=> 'Grund:',
 		'uc_armory_impduplex'			=> 'Charakter ist bereits vorhanden',
+		'uc_race'						=> 'Rasse',
+		'uc_class'						=> 'Klasse',
 		
 		'no_data'						=> 'Zu diesem Char konnten keine Informationen abgerufen werden. Bitte überprüfe ob der richtige Server in den Einstellungen eingestellt ist.',
 		

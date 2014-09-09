@@ -163,7 +163,6 @@ $english_array = array(
 		'profession3_mastery'			=> 'Mastery-level third profession',
 		
 		// Profile Translation
-		
 		'uc_of'							=>	'of',
 		'uc_stat_image'					=>	'en',
 		'uc_might'						=>	'Might',
@@ -182,6 +181,8 @@ $english_array = array(
 		'uc_tactical_mit'				=>	'Tactical Mit.',
 		'uc_proficiency'				=>	'Proficiency',
 		'uc_mastery'					=>	'Mastery',
+		'uc_race'						=> 'Race',
+		'uc_class'						=> 'Class',
 		
 		//Events
 		'event1' => 'Annùminas: Glinghant',
