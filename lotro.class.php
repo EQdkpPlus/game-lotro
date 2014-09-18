@@ -119,6 +119,7 @@ if(!class_exists('lotro')) {
 					'lang'			=> 'vocation',
 					'options'		=> array('armourer' => 'Armourer', 'armsman' => 'Armsman', 'explorer' => 'Explorer', 'historian' => 'Historian', 'tinker' => 'Tinker', 'woodsman' => 'Woodsman', 'yeoman' => 'Yeoman'),
 					'undeletable'	=> true,
+					'tolang'		=> true,
 				),
 				'profession1'	=> array(
 					'type'			=> 'dropdown',
@@ -126,6 +127,7 @@ if(!class_exists('lotro')) {
 					'lang'			=> 'profession1',
 					'options'		=> array('farmer' => 'Farmer', 'forester' => 'Forester', 'prospector' => 'Prospector', 'cook' => 'Cook', 'jeweller' => 'Jeweller', 'metalsmith' => 'Metalsmith', 'scholar' => 'Scholar', 'tailor' => 'Tailor', 'weaponsmith' => 'Weaponsmith', 'woodworker' => 'Woodworker'),
 					'undeletable'	=> true,
+					'tolang'		=> true,
 				),
 				'profession2'	=> array(
 					'type'			=> 'dropdown',
@@ -133,6 +135,7 @@ if(!class_exists('lotro')) {
 					'lang'			=> 'profession2',
 					'options'		=> array('farmer' => 'Farmer', 'forester' => 'Forester', 'prospector' => 'Prospector', 'cook' => 'Cook', 'jeweller' => 'Jeweller', 'metalsmith' => 'Metalsmith', 'scholar' => 'Scholar', 'tailor' => 'Tailor', 'weaponsmith' => 'Weaponsmith', 'woodworker' => 'Woodworker'),
 					'undeletable'	=> true,
+					'tolang'		=> true,
 				),
 				'profession3'	=> array(
 					'type'			=> 'dropdown',
@@ -140,6 +143,7 @@ if(!class_exists('lotro')) {
 					'lang'			=> 'profession3',
 					'options'		=> array('farmer' => 'Farmer', 'forester' => 'Forester', 'prospector' => 'Prospector', 'cook' => 'Cook', 'jeweller' => 'Jeweller', 'metalsmith' => 'Metalsmith', 'scholar' => 'Scholar', 'tailor' => 'Tailor', 'weaponsmith' => 'Weaponsmith', 'woodworker' => 'Woodworker'),
 					'undeletable'	=> true,
+					'tolang'		=> true,
 				),
 				'profession1_mastery'	=> array(
 					'type'			=> 'int',
