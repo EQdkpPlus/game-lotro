@@ -11,7 +11,7 @@
  * @link		http://eqdkp-plus.com
  * @package		eqdkp-plus
  * @version		$Rev$
- *
+ * 
  * $Id$
  */
 
@@ -22,16 +22,16 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version				= '2.2.2';
-		protected $this_game		= 'lotro';
-		protected $types			= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
-		protected $classes			= array();
-		protected $races			= array();
-		protected $factions			= array();
-		protected $filters			= array();
-		public  $langs				= array('english', 'german');
-		public $objects				= array('lotro_data');
-		public $no_reg_obj			= array('lotro_data');
+		public $version	= '2.2.2';
+		protected $this_game	= 'lotro';
+		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
+		protected $classes		= array();
+		protected $races		= array();
+		protected $factions		= array();
+		protected $filters		= array();
+		public  $langs			= array('english', 'german');
+		public $objects			= array('lotro_data');
+		public $no_reg_obj		= array('lotro_data');	
 		
 		
 		public function __construct() {
@@ -199,13 +199,13 @@ if(!class_exists('lotro')) {
 					'options'	=> $this->game->get('factions'),
 					'default'	=> 'alliance'
 				),
-				'uc_server_loc'	=> array(
+				'uc_server_loc'  => array(
 					'lang'		=> 'uc_server_loc',
 					'type' 		=> 'dropdown',
 					'options'	=> array('eu' => 'EU', 'us' => 'US'),
 				),
 				// TODO: check if apostrophe is saved correctly
-				'uc_servername'	=> array(
+				'uc_servername'     => array(
 					'lang'			=> 'uc_servername',
 					'type'			=> 'text',
 					'size'			=> '21',
@@ -231,15 +231,14 @@ if(!class_exists('lotro')) {
 				}
 				$this->filters[$lang] = array_merge($this->filters[$lang], array(
 					array('name' => '-----------', 'value' => false),
-					array('name' => $this->glang('heavy', true, $lang), 'value' => array(2 => 'class', 6 => 'class', 7 => 'class')),
-					array('name' => $this->glang('medium', true, $lang), 'value' => array(3 => 'class', 5 => 'class', 9 => 'class')),
-					array('name' => $this->glang('light', true, $lang), 'value' => array(1 => 'class', 4 => 'class', 8 => 'class')),
+                    array('name' => $this->glang('heavy', true, $lang), 'value' => array(2 => 'class', 6 => 'class', 7 => 'class')),
+                    array('name' => $this->glang('medium', true, $lang), 'value' => array(3 => 'class', 5 => 'class', 9 => 'class')),
+                    array('name' => $this->glang('light', true, $lang), 'value' => array(1 => 'class', 4 => 'class', 8 => 'class')),
 				));
 			}
 		}
 
 		public function install($install=false){
-			$this->game->resetEvents();
 
 			$arrEventIDs = array();
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event1'), 0, "annuminas_glinghant.png");
@@ -320,11 +319,9 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event76'), 0, "skirmish.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event77'), 0, "skirmish.png");
 
-			$this->game->resetMultiDKPPools();
-			$this->game->resetItempools();
-			$intItempoolID = $this->game->addItempool("Default", "Default Itempool");
+			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 
-			$this->game->addMultiDKPPool("Default", "Default MultiDKPPool", $arrEventIDs, array($intItempoolID));
+
 		}
 	}
 }
