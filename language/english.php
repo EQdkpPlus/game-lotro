@@ -31,13 +31,15 @@ $english_array = array(
 		7	=> 'Champion',
 		8	=> 'Runekeeper',
 		9	=> 'Warden',
+		10	=> 'Beorning',
 	),
 	'races' => array(
 		0	=> 'Unknown',
 		1	=> 'Man',
 		2	=> 'Hobbit',
 		3	=> 'Elf',
-		4	=> 'Dwarf'
+		4	=> 'Dwarf',
+		5	=> 'Beorning',
 	),
 	'factions' => array(
 		'free'			=>'Free People',

@@ -31,13 +31,15 @@ $german_array = array(
 		7	=> 'Waffenmeister',
 		8	=> 'Runenbewahrer',
 		9	=> 'Hüter',
+		10	=> 'Beorninger',
 	),
 	'races' => array(
 		0	=> 'Unknown',
-		0	=> 'Mensch',
-		0	=> 'Hobbit',
-		0	=> 'Elb',
-		0	=> 'Zwerg'
+		1	=> 'Mensch',
+		2	=> 'Hobbit',
+		3	=> 'Elb',
+		4	=> 'Zwerg',
+		5	=> 'Beorninger',
 	),
 	'factions' => array(
 		'free'			=> 'Freie Völker',

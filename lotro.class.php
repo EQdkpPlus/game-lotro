@@ -22,7 +22,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version	= '2.2.2';
+		public $version	= '2.15.0';
 		protected $this_game	= 'lotro';
 		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
 		protected $classes		= array();
@@ -86,11 +86,11 @@ if(!class_exists('lotro')) {
 		);
 		
 		public $default_roles = array(
-			1	=> array(1,8),
-			2	=> array(6,7,9),
-			3	=> array(4,5),
-			4	=> array(3,7,8,9),
-			5	=> array(2)
+			1	=> array(1,8),			// Healer
+			2	=> array(6,7,9,10),		// Tank
+			3	=> array(4,5),			// CC
+			4	=> array(3,7,8,9,10),	// Damage Dealer
+			5	=> array(2,10)			// Supporter
 		);
 		
 		protected $class_colors = array(
@@ -102,7 +102,8 @@ if(!class_exists('lotro')) {
 			6	=> '#990000',
 			7	=> '#CC3300',
 			8	=> '#1A3CAA',
-			9	=> '#FFF468'
+			9	=> '#FFF468',
+			10	=> '#FFFFFF',
 		);
 
 		protected $glang		= array();
