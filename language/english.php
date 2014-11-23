@@ -102,8 +102,8 @@ $english_array = array(
 		'uc_fact_pve'					=> 'Free People',
 		'uc_server_loc'					=> 'Server location',
 		'uc_server_loc_help'			=> 'Location of your LOTRO-server',
-		'uc_servername'					=> 'Server name',
-		'uc_servername_help'			=> 'Name of your LOTRO-server (p.e. Bullroarer)',
+		'servername'					=> 'Server name',
+		'servername_help'			=> 'Name of your LOTRO-server (p.e. Bullroarer)',
 		'uc_lockserver'					=> 'Lock the server name for users',
 		'uc_lockserver_help'			=> '',
 		
@@ -142,7 +142,7 @@ $english_array = array(
 		'uc_imp_failed'					=> 'An error occured while updating the data. Please try again.',
 		
 		'uc_charname'					=> 'Character\'s name',
-		'uc_servername'					=> 'Server\'s name',
+		'servername'					=> 'Server\'s name',
 		'uc_charfound'					=> "The character <b>%1\$s</b> has been found in the armory.",
 		'uc_charfound2'					=> "This character was updated on <b>%1\$s</b>.",
 		'uc_charfound3'					=> 'ATTENTION: Importing will overwrite the existing data!',

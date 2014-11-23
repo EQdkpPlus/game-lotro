@@ -17,7 +17,7 @@
  */
 
 	$this->game->new_object('lotro_data', 'ldata', array());
-	$chardata = $this->game->obj['ldata']->character($member['name'],$this->config->get('uc_servername'));
+	$chardata = $this->game->obj['ldata']->character($member['name'],$this->config->get('servername'));
 	if ($chardata){
 		
 		$this->tpl->add_css('.charsheet {

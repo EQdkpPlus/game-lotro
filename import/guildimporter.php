@@ -73,7 +73,7 @@ class guildImporter extends page_generic {
 		}
 		
 		// generate output
-		$guilddata	= $this->game->obj['ldata']->guild($this->in->get('guildname', ''), $this->config->get('uc_servername'), true);
+		$guilddata	= $this->game->obj['ldata']->guild($this->in->get('guildname', ''), $this->config->get('servername'), true);
 
 		if(!isset($guilddata['status'])){
 			$hmtlout = '<div id="guildimport_dataset">

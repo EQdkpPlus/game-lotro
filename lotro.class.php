@@ -200,14 +200,14 @@ if(!class_exists('lotro')) {
 					'options'	=> $this->game->get('factions'),
 					'default'	=> 'alliance'
 				),
-				'uc_server_loc'  => array(
+				'uc_server_loc'	=> array(
 					'lang'		=> 'uc_server_loc',
 					'type' 		=> 'dropdown',
 					'options'	=> array('eu' => 'EU', 'us' => 'US'),
 				),
 				// TODO: check if apostrophe is saved correctly
-				'uc_servername'     => array(
-					'lang'			=> 'uc_servername',
+				'servername'	=> array(
+					'lang'			=> 'servername',
 					'type'			=> 'text',
 					'size'			=> '21',
 					'autocomplete'	=> $this->game->get('realmlist'),
