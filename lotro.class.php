@@ -34,20 +34,9 @@ if(!class_exists('lotro')) {
 		protected $factions		= array();
 		protected $filters		= array();
 		public  $langs			= array('english', 'german');
-		public $objects			= array('lotro_data');
-		public $no_reg_obj		= array('lotro_data');	
 		
 		
 		public function __construct() {
-			$this->importers 		= array(
-				'char_import'		=> 'charimporter.php',						// filename of the character import
-				'char_update'		=> 'charimporter.php',						// filename of the character update, member_id (POST) is passed
-				'char_mupdate'		=> 'charimporter.php'.$this->SID.'&massupdate=true',		// filename of the "update all characters" aka mass update
-				'guild_import'		=> 'guildimporter.php',						// filename of the guild import
-				'import_reseturl'	=> 'charimporter.php'.$this->SID.'&resetcache=true',		// filename of the reset cache
-				'guild_imp_rsn'		=> true,									// Guild import & Mass update requires server name
-				'import_data_cache'	=> true,									// Is the data cached and requires a reset call?
-			);
 			
 			parent::__construct();
 		}
@@ -198,12 +187,6 @@ if(!class_exists('lotro')) {
 
 		public function admin_settings() {
 			$settingsdata_admin = array(
-				'uc_faction'	=> array(
-					'lang'		=> 'uc_faction',
-					'type'		=> 'dropdown',
-					'options'	=> $this->game->get('factions'),
-					'default'	=> 'alliance'
-				),
 				'uc_server_loc'	=> array(
 					'lang'		=> 'uc_server_loc',
 					'type' 		=> 'dropdown',
