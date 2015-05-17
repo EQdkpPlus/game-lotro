@@ -19,8 +19,7 @@
  *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-	$this->game->new_object('lotro_data', 'ldata', array());
-	$chardata = $this->game->obj['ldata']->character($member['name'],$this->config->get('servername'));
+	$chardata = false;
 	if ($chardata){
 		
 		$this->tpl->add_css('.charsheet {
