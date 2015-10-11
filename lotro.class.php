@@ -108,6 +108,15 @@ if(!class_exists('lotro')) {
 
 		public function profilefields(){
 			$xml_fields = array(
+				'level'	=> array(
+					'type'			=> 'spinner',
+					'category'		=> 'character',
+					'lang'			=> 'uc_level',
+					'max'			=> 100,
+					'min'			=> 1,
+					'undeletable'	=> true,
+					'sort'			=> 4
+				),
 				'vocation'	=> array(
 					'type'			=> 'dropdown',
 					'category'		=> 'profession',
