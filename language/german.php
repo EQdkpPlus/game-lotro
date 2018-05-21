@@ -43,6 +43,7 @@ $german_array = array(
 		3	=> 'Elb',
 		4	=> 'Zwerg',
 		5	=> 'Beorninger',
+		6	=> 'Hochelb',
 	),
 	'factions' => array(
 		'free'			=> 'Freie Völker',

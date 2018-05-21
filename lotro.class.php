@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version	= '3.1.0';
+		public $version	= '3.1.1';
 		protected $this_game	= 'lotro';
 		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
 		protected $classes		= array();
@@ -74,6 +74,7 @@ if(!class_exists('lotro')) {
 						3 	=> 'all',		// Elf
 						4 	=> 'all',		// Dwarf
 						5 	=> 'all',		// Beorning
+						6	=> array(1,2,3,4,6,7,8,9),
 					),
 				),
 			),

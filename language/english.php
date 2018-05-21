@@ -43,6 +43,7 @@ $english_array = array(
 		3	=> 'Elf',
 		4	=> 'Dwarf',
 		5	=> 'Beorning',
+		6	=> 'High Elf',
 	),
 	'factions' => array(
 		'free'			=>'Free People',
