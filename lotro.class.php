@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version	= '3.0.4';
+		public $version	= '3.0.5';
 		protected $this_game	= 'lotro';
 		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
 		protected $classes		= array();
@@ -318,8 +318,41 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event77'), 0, "skirmish.png");
 
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
-
-
+		}
+		//Guildbank
+		public function guildbank_money(){
+		return 	$money_data = array(
+				'gold'		=> array(
+			'icon'			=> array(
+				'type'		=> 'default',
+				'name'		=> 'gold'
+			),
+			'factor'		=> 100000,
+			'size'			=> 'unlimited',
+			'language'		=> $this->user->lang(array('gb_currency', 'gold')),
+			'short_lang'	=> $this->user->lang(array('gb_currency', 'gold_s')),
+		),
+		'silver'	=> array(
+			'icon'			=> array(
+				'type'		=> 'default',
+				'name'		=> 'silver'
+			),
+			'factor'		=> 100,
+			'size'			=> 3,
+			'language'		=> $this->user->lang(array('gb_currency', 'silver')),
+			'short_lang'	=> $this->user->lang(array('gb_currency', 'silver_s')),
+		),
+		'copper'	=> array(
+			'icon'			=> array(
+				'type'		=> 'default',
+				'name'		=> 'bronze'
+			),
+			'factor'		=> 1,
+			'size'			=> 2,
+			'language'		=> $this->user->lang(array('gb_currency', 'copper')),
+			'short_lang'	=> $this->user->lang(array('gb_currency', 'copper_s')),
+		)
+		);	
 		}
 	}
 }
