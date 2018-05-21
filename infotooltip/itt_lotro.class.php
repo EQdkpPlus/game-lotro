@@ -3,7 +3,7 @@
  *	Package:	Lord of the rings online game package
  *	Link:		http://eqdkp-plus.eu
  *
- *	Copyright (C) 2006-2015 EQdkp-Plus Developer Team
+ *	Copyright (C) 2006-2016 EQdkp-Plus Developer Team
  *
  *	This program is free software: you can redistribute it and/or modify
  *	it under the terms of the GNU Affero General Public License as published
@@ -84,8 +84,7 @@ if(!class_exists('itt_lotro')) {
 				return array('name' => $itemname, 'html' => '{DEBUG}', 'baditem' => true);
 			}
 			# http://lorebook.lotro.com/wiki/index.php?action=ajax&rs=efLotroResourceAjaxWrapper&rsargs[]=rulingring&rsargs[]=Special:LotroResource?id=1879213025
-			/* <?xml version="1.0" encoding="UTF-8"?>
-<apiresponse>
+			/* <?xml version="1.0" encoding="UTF-8"?><apiresponse>
  <item id="1879213025" name="Herdsman's Scarred Blade" level="66" type="One-handed Sword" quality="Uncommon" unique="1" isItemAdvancement="0" stackSize="1" bindOnAcquire="1" bindOnEquip="0" consumedOnUse="0" cooldown="" iconUrl="http://content.turbine.com/sites/lorebook.lotro.com/images/icons/item/weapon_sword/eq_trumdreng_1hsword_01.png" decoration="" instrument="" slotShortName="Weapon_Sword" slotName="Swords">
   <requirements>
     <level/>

@@ -3,7 +3,7 @@
  *	Package:	Lord of the rings online game package
  *	Link:		http://eqdkp-plus.eu
  *
- *	Copyright (C) 2006-2015 EQdkp-Plus Developer Team
+ *	Copyright (C) 2006-2016 EQdkp-Plus Developer Team
  *
  *	This program is free software: you can redistribute it and/or modify
  *	it under the terms of the GNU Affero General Public License as published
@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version	= '3.0.5';
+		public $version	= '3.1.0';
 		protected $this_game	= 'lotro';
 		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
 		protected $classes		= array();
@@ -55,7 +55,7 @@ if(!class_exists('lotro')) {
 				'type'		=> 'races',
 				'admin'		=> false,
 				'decorate'	=> true,
-				'parent'	=> false
+				'parent'	=> false,
 			),
 			array(
 				'name'		=> 'class',
