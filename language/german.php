@@ -91,6 +91,10 @@ $german_array = array(
 	
 		// other Servers
 		'Bullroarer',
+		
+		//Legendary Servers
+		'Anor',
+		'Ithil'
 	),
 	'lang' => array(
 		'lotro'							=> 'Der Herr der Ringe Online',
