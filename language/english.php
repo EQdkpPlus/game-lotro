@@ -91,6 +91,10 @@ $english_array = array(
 	
 		// other Servers
 		'Bullroarer',
+		
+		//Legendary Servers
+		'Anor',
+		'Ithil'
 	),
 	'lang' => array(
 		'lotro' 						=> 'The Lord of the Rings Online',
