@@ -26,7 +26,7 @@ if ( !defined('EQDKP_INC') ){
 if(!class_exists('lotro')) {
 	class lotro extends game_generic {
 		protected static $apiLevel	= 20;
-		public $version	= '3.1.2';
+		public $version	= '3.1.3';
 		protected $this_game	= 'lotro';
 		protected $types		= array('classes', 'races', 'factions', 'filters', 'roles', 'realmlist');
 		protected $classes		= array();
