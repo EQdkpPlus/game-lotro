@@ -69,12 +69,13 @@ if(!class_exists('lotro')) {
 				'parent'	=> array(
 					'race' => array(
 						0 	=> 'all',		// Unknown
-						1 	=> 'all',		// Man
-						2 	=> 'all',		// Man
-						3 	=> 'all',		// Elf
-						4 	=> 'all',		// Dwarf
-						5 	=> 'all',		// Beorning
-						6	=> array(1,2,3,4,6,7,8,9),
+						1 	=> array(1,2,3,4,5,6,7,9),		// Man
+						2 	=> array(5,6,3,1,9),		// Hobbit
+						3 	=> array(1,3,4,6,7,8,9),		// Elf
+						4 	=> array(5,7,6,3,1,8),		// Dwarf
+						5 	=> array(10),		// Beorning
+						6	=> array(1,2,3,4,6,7,8,9), // High-Elf
+						7	=> array(5,7,6,3,1,8), // Stout-Axe
 					),
 				),
 			),

@@ -44,6 +44,7 @@ $german_array = array(
 		4	=> 'Zwerg',
 		5	=> 'Beorninger',
 		6	=> 'Hochelb',
+		7	=> 'Stark-Axt',
 	),
 	'factions' => array(
 		'free'			=> 'Freie Völker',
