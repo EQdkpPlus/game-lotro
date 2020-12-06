@@ -99,7 +99,7 @@ if(!class_exists('lotro')) {
 			7	=> '#CC3300',
 			8	=> '#1A3CAA',
 			9	=> '#FFF468',
-			10	=> '#FFFFFF',
+			10	=> '#4d1900',
 		);
 
 		protected $glang		= array();
