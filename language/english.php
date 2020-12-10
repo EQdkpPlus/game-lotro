@@ -274,6 +274,8 @@ $english_array = array(
 		'event76' => 'Skirmish (12)',
 		'event77' => 'Skirmish (6)',
 		'event78' => 'Skirmish (3)',
+		'event79' => 'Summer: Boss from the Vaults: Thrâng',
+		'event80' => 'Summer: The Perfect Picnic',
 	),
 );
 ?>
