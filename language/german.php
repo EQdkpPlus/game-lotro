@@ -309,6 +309,14 @@ $german_array = array(
 		'event87' => 'Weg nach Erebor: Die Glocken von Tal',
 		'event88' => 'Weg nach Erebor: Smaugs Feuer',
 		'event89' => 'Weg nach Erebor: Netze des Krabbeltals',
+		'event90' => 'Epische Schlachten: Helms Damm',
+		'event91' => 'Epische Schlachten: Klammwall',
+		'event92' => 'Epische Schlachten: Klammtal',
+		'event93' => 'Epische Schlachten: Die glitzernde Grotte',
+		'event94' => 'Epische Schlachten: Die Hornburg',
+		'event95' => 'Epische Schlachten: Rückeroberung von Pelargir',
+		'event96' => 'Epische Schlachten: Die Verteidigung von Minas Tirith',
+		'event97' => 'Epische Schlachten: Hammer der Unterwelt',
 	),
 );
 ?>

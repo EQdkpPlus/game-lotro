@@ -285,6 +285,14 @@ $english_array = array(
 		'event87' => 'Road to Erebor: The Bell of Dale',
 		'event88' => 'Road to Erebor: The Fires of Smaug',
 		'event89' => 'Road to Erebor: Webs of the Scuttledells',
+		'event90' => 'Epic Battles: Helms Dike',
+		'event91' => 'Epic Battles: Deeping Wall',
+		'event92' => 'Epic Battles: Deeping Coomb',
+		'event93' => 'Epic Battles: Glittering Caves',
+		'event94' => 'Epic Battles: The Hornburg',
+		'event95' => 'Epic Battles: Retaking Pelargir',
+		'event96' => 'Epic Battles: The Defence of Minas Tirith',
+		'event97' => 'Epic Battles: Hammer of the Underworld',
 	),
 );
 ?>

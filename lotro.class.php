@@ -330,6 +330,14 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event87'), 0, "road_to_erebor_dale.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event88'), 0, "road_to_erebor_smaug.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event89'), 0, "road_to_erebor_scuttledells.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event90'), 0, "epic_battles_helm_dike.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event91'), 0, "epic_battles_deeping_wall.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event92'), 0, "epic_battles_deeping_coomb.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event93'), 0, "epic_battles_glittering_caves.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event94'), 0, "epic_battles_hornburg.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event95'), 0, "epic_battles_retaking_pelargir.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event96'), 0, "epic_battles_minas_tirith.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event97'), 0, "epic_battles_hammer_of_the_underworld.png");
 
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}
