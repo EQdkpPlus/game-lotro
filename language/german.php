@@ -297,6 +297,7 @@ $german_array = array(
 		'event75' => 'Bilwiss-Dorf: Thronsaal',
 		'event76' => 'Scharmützel (12er)',
 		'event77' => 'Scharmützel (6er)',
+		'event78' => 'Scharmützel (3er)',
 	),
 );
 ?>

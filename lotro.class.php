@@ -318,6 +318,7 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event75'), 0, "bilwissdorf_thronsaal.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event76'), 0, "skirmish.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event77'), 0, "skirmish.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event78'), 0, "skirmish.png");
 
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}

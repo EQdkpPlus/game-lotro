@@ -273,6 +273,7 @@ $english_array = array(
 		'event75' => 'Goblins Town: Goblin-town Throne Room',
 		'event76' => 'Skirmish (12)',
 		'event77' => 'Skirmish (6)',
+		'event78' => 'Skirmish (3)',
 	),
 );
 ?>
