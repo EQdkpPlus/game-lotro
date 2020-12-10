@@ -293,6 +293,9 @@ $english_array = array(
 		'event95' => 'Epic Battles: Retaking Pelargir',
 		'event96' => 'Epic Battles: The Defence of Minas Tirith',
 		'event97' => 'Epic Battles: Hammer of the Underworld',
+		'event98' => 'Osgiliath: Sunken Labyrinth',
+		'event99' => 'Osgiliath: The Dome of Stars',
+		'event100' => 'Osgiliath: The Ruined City',
 	),
 );
 ?>

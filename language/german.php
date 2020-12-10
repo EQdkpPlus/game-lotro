@@ -317,6 +317,9 @@ $german_array = array(
 		'event95' => 'Epische Schlachten: Rückeroberung von Pelargir',
 		'event96' => 'Epische Schlachten: Die Verteidigung von Minas Tirith',
 		'event97' => 'Epische Schlachten: Hammer der Unterwelt',
+		'event98' => 'Osgiliath: Versunkene Labyrinth',
+		'event99' => 'Osgiliath: Sternendom',
+		'event100' => 'Osgiliath: Die zerstörte Stadt',
 	),
 );
 ?>
