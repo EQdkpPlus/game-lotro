@@ -323,6 +323,13 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event80'), 0, "unknown.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event81'), 0, "storvagun.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event82'), 0, "the_battle_at_frostbluff.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event83'), 0, "road_to_erebor_the_lonely_mountain.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event84'), 0, "road_to_erebor_iorbars_peak.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event85'), 0, "road_to_erebor_great_goblin.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event86'), 0, "road_to_erebor_erebor.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event87'), 0, "road_to_erebor_dale.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event88'), 0, "road_to_erebor_smaug.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event89'), 0, "road_to_erebor_scuttledells.png");
 
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}

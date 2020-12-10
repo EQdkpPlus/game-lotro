@@ -302,6 +302,13 @@ $german_array = array(
 		'event80' => 'Sommer: Das Perfekte Picknick',
 		'event81' => 'Yule: Boss aus dem Gewölbe: Storvâgûn',
 		'event82' => 'Yule: Die Schlacht bei Frostfels',
+		'event83' => 'Weg nach Erebor: Flucht zum einsamen Berg',
+		'event84' => 'Weg nach Erebor: Iobars Gipfel',
+		'event85' => 'Weg nach Erebor: Sitz des grossen Bilwisses',
+		'event86' => 'Weg nach Erebor: Die Schlacht um Erebor',
+		'event87' => 'Weg nach Erebor: Die Glocken von Tal',
+		'event88' => 'Weg nach Erebor: Smaugs Feuer',
+		'event89' => 'Weg nach Erebor: Netze des Krabbeltals',
 	),
 );
 ?>

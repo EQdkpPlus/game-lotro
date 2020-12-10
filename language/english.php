@@ -278,6 +278,13 @@ $english_array = array(
 		'event80' => 'Summer: The Perfect Picnic',
 		'event81' => 'Yule: Boss from the Vaults: Storvâgûn',
 		'event82' => 'Yule: The Battle of Forstbluff',
+		'event83' => 'Road to Erebor: Flight to Lonely Mountain',
+		'event84' => 'Road to Erebor: Iorbar\'s Peak',
+		'event85' => 'Road to Erebor: Seat of the Great Goblin',
+		'event86' => 'Road to Erebor: The Battle for Erebor',
+		'event87' => 'Road to Erebor: The Bell of Dale',
+		'event88' => 'Road to Erebor: The Fires of Smaug',
+		'event89' => 'Road to Erebor: Webs of the Scuttledells',
 	),
 );
 ?>
