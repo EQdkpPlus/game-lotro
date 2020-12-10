@@ -300,6 +300,8 @@ $german_array = array(
 		'event78' => 'Scharmützel (3er)',
 		'event79' => 'Sommer: Boss aus dem Gewölbe: Thrâng',
 		'event80' => 'Sommer: Das Perfekte Picknick',
+		'event81' => 'Yule: Boss aus dem Gewölbe: Storvâgûn',
+		'event82' => 'Yule: Die Schlacht bei Frostfels',
 	),
 );
 ?>

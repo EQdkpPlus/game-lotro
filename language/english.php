@@ -276,6 +276,8 @@ $english_array = array(
 		'event78' => 'Skirmish (3)',
 		'event79' => 'Summer: Boss from the Vaults: Thrâng',
 		'event80' => 'Summer: The Perfect Picnic',
+		'event81' => 'Yule: Boss from the Vaults: Storvâgûn',
+		'event82' => 'Yule: The Battle of Forstbluff',
 	),
 );
 ?>
