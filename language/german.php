@@ -304,7 +304,7 @@ $german_array = array(
 		'event82' => 'Yule: Die Schlacht bei Frostfels',
 		'event83' => 'Weg nach Erebor: Flucht zum einsamen Berg',
 		'event84' => 'Weg nach Erebor: Iobars Gipfel',
-		'event85' => 'Weg nach Erebor: Sitz des grossen Bilwisses',
+		'event85' => 'Weg nach Erebor: Sitz des großen Bilwisses',
 		'event86' => 'Weg nach Erebor: Die Schlacht um Erebor',
 		'event87' => 'Weg nach Erebor: Die Glocken von Tal',
 		'event88' => 'Weg nach Erebor: Smaugs Feuer',
@@ -320,6 +320,10 @@ $german_array = array(
 		'event98' => 'Osgiliath: Versunkene Labyrinth',
 		'event99' => 'Osgiliath: Sternendom',
 		'event100' => 'Osgiliath: Die zerstörte Stadt',
+		'event101' => 'Die Schlacht auf dem Pelennor: Blut der Schwarzen Schlange',
+		'event102' => 'Die Schlacht auf dem Pelennor: Die Kais von Harlond',
+		'event103' => 'Die Schlacht auf dem Pelennor: Die Stumme Straße',
+		'event104' => 'Die Schlacht auf dem Pelennor: Thron des Schreckensherren',
 	),
 );
 ?>

@@ -341,6 +341,10 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event98'), 0, "ostgiliath_sunken_labyrinth.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event99'), 0, "ostgiliath_dome_of_stars.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event100'), 0, "ostgiliath_ruined_city.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event101'), 0, "battle_of_pelennor_fields_blood_of_the_black_serpent.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event102'), 0, "battle_of_pelennor_fields_quays_of_the_harlond.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event103'), 0, "battle_of_pelennor_fields_silent_street.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event104'), 0, "battle_of_pelennor_fields_battle_of_pelennor_fields_throne_of_the_dread_terror.png");
 
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}

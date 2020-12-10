@@ -296,6 +296,10 @@ $english_array = array(
 		'event98' => 'Osgiliath: Sunken Labyrinth',
 		'event99' => 'Osgiliath: The Dome of Stars',
 		'event100' => 'Osgiliath: The Ruined City',
+		'event101' => 'Battle of the Pelennor Fields: Blood of the Black Serpent',
+		'event102' => 'Battle of the Pelennor Fields: The Quays of the Harlond',
+		'event103' => 'Battle of the Pelennor Fields: The Silent Street',
+		'event104' => 'Battle of the Pelennor Fields: Throne of the Dread Terror',
 	),
 );
 ?>
