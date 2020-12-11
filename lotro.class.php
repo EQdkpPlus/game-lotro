@@ -345,9 +345,9 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event102'), 0, "battle_of_pelennor_fields_quays_of_the_harlond.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event103'), 0, "battle_of_pelennor_fields_silent_street.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event104'), 0, "battle_of_pelennor_fields_battle_of_pelennor_fields_throne_of_the_dread_terror.png");
-			$arrEventIDs[] = $this->game->addEvent($this->glang('event105'), 0, "plateau_of_gorgoroth_.png");
-			$arrEventIDs[] = $this->game->addEvent($this->glang('event106'), 0, "plateau_of_gorgoroth_.png");
-			$arrEventIDs[] = $this->game->addEvent($this->glang('event107'), 0, "plateau_of_gorgoroth_.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event105'), 0, "plateau_of_gorgoroth_seregost.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event106'), 0, "plateau_of_gorgoroth_naerband.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event107'), 0, "plateau_of_gorgoroth_mordath.png");
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}
 		//Guildbank
