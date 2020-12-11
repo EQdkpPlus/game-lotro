@@ -331,6 +331,7 @@ $german_array = array(
 		'event109' => 'Graues Gebirge: Funkenfeste',
 		'event110' => 'Graues Gebirge: Thikil-gundun',
 		'event111' => 'Graues Gebirge: Der Amboss der Winterschmiede',
+		'event112' => 'Schwerteltal: Die Tiefen von Kidzuhl-kâlah',
 	),
 );
 ?>

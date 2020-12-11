@@ -352,6 +352,7 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event109'), 0, "grey_mountains_glimmerdeep.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event110'), 0, "grey_mountains_thikil-gundun.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event111'), 0, "grey_mountains_winterstith.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event112'), 0, "unkown.png");
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}
 		//Guildbank

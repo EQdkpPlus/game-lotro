@@ -307,6 +307,7 @@ $english_array = array(
 		'event109' => 'Grey Mountains: Glimmerdeep',
 		'event110' => 'Grey Mountains: Thikil-gundun',
 		'event111' => 'Grey Mountains: The Anvild of Winterstith',
+		'event112' => 'Gladdenmere: The Depths of Kidzuhl-kâlah',
 	),
 );
 ?>
