@@ -342,6 +342,7 @@ $german_array = array(
 		'event120' => 'Minas Morgul: Remmorchant, das Netz der Finsterniss',
 		'event121' => 'Krieg der Drei Gipfel: Amdân Dammul, die Blutige Schwelle',
 		'event122' => 'Krieg der Drei Gipfel: Shakalush, die Stufenschlacht',
+		'event123' => 'Other instances: Askâd-mazal, die Kammer der Schatten',
 	),
 );
 ?>

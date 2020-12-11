@@ -363,6 +363,7 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event120'), 0, "minas_morgul_remmorchant.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event121'), 0, "war_of_three_peaks_amdan_dammul.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event122'), 0, "unkown.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event123'), 0, "askad-mazal.png");
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}
 		//Guildbank
