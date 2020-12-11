@@ -353,6 +353,14 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event110'), 0, "grey_mountains_thikil-gundun.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event111'), 0, "grey_mountains_winterstith.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event112'), 0, "unkown.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event113'), 0, "minas_morgul_eithel_gwaur.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event114'), 0, "minas_morgul_gath_daeroval.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event115'), 0, "minas_morgul_gorthad_nur.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event116'), 0, "minas_morgul_harrowing_of_morgul.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event117'), 0, "minas_morgul_bar_nirnaeth.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event118'), 0, "minas_morgul_ghashan-kutot.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event119'), 0, "minas_morgul_fallen_kings.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event120'), 0, "minas_morgul_remmorchant.png");
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}
 		//Guildbank

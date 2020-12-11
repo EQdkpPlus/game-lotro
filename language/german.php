@@ -332,6 +332,14 @@ $german_array = array(
 		'event110' => 'Graues Gebirge: Thikil-gundun',
 		'event111' => 'Graues Gebirge: Der Amboss der Winterschmiede',
 		'event112' => 'Schwerteltal: Die Tiefen von Kidzuhl-kâlah',
+		'event113' => 'Minas Morgul: Eithl Gwaur, der Dreckbrunnen',
+		'event114' => 'Minas Morgul: Gath Daeroval, der Schattenhorst',
+		'event115' => 'Minas Morgul: Gorthad Nûr, das Tiefengrab',
+		'event116' => 'Minas Morgul: Die Grau von Morgul',
+		'event117' => 'Minas Morgul: Bâr Nírnaeth, die Häuser der Wehklagen',
+		'event118' => 'Minas Morgul: Ghashan-kútot, die Hallen des dunkelen Wissens',
+		'event119' => 'Minas Morgul: Die Gefallenen Könige',
+		'event120' => 'Minas Morgul: Remmorchant, das Netz der Finsterniss',
 	),
 );
 ?>

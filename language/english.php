@@ -308,6 +308,14 @@ $english_array = array(
 		'event110' => 'Grey Mountains: Thikil-gundun',
 		'event111' => 'Grey Mountains: The Anvild of Winterstith',
 		'event112' => 'Gladdenmere: The Depths of Kidzuhl-kâlah',
+		'event113' => 'Minas Morgul: Eithl Gwaur, the Filth-well',
+		'event114' => 'Minas Morgul: Gath Daeroval, the Shadow-roost',
+		'event115' => 'Minas Morgul: Gorthad Nûr, the Deep-barrow',
+		'event116' => 'Minas Morgul: The Harrowing of Morgul',
+		'event117' => 'Minas Morgul: Bâr Nírnaeth, the Houses of Lamentation',
+		'event118' => 'Minas Morgul: Ghashan-kútot, the Hall of Black Lore',
+		'event119' => 'Minas Morgul: The Fallen Kings',
+		'event120' => 'Minas Morgul: Remmorchant, the Net of Darkness',
 	),
 );
 ?>
