@@ -300,6 +300,9 @@ $english_array = array(
 		'event102' => 'Battle of the Pelennor Fields: The Quays of the Harlond',
 		'event103' => 'Battle of the Pelennor Fields: The Silent Street',
 		'event104' => 'Battle of the Pelennor Fields: Throne of the Dread Terror',
+		'event105' => 'Plateau of Gorgoroth: The Court of Seregost',
+		'event106' => 'Plateau of Gorgoroth: The Dungeons of Naerband',
+		'event107' => 'Plateau of Gorgoroth: The Abyss of Mordath',
 	),
 );
 ?>

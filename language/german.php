@@ -324,6 +324,9 @@ $german_array = array(
 		'event102' => 'Die Schlacht auf dem Pelennor: Die Kais von Harlond',
 		'event103' => 'Die Schlacht auf dem Pelennor: Die Stumme Straße',
 		'event104' => 'Die Schlacht auf dem Pelennor: Thron des Schreckensherren',
+		'event105' => 'Ebene von Gorgoroth: Der Hof von Seregost',
+		'event106' => 'Ebene von Gorgoroth: Die Verliese von Naerband',
+		'event107' => 'Ebene von Gorgoroth: Der Abgrund von Mordath',
 	),
 );
 ?>
