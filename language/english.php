@@ -303,6 +303,10 @@ $english_array = array(
 		'event105' => 'Plateau of Gorgoroth: The Court of Seregost',
 		'event106' => 'Plateau of Gorgoroth: The Dungeons of Naerband',
 		'event107' => 'Plateau of Gorgoroth: The Abyss of Mordath',
+		'event108' => 'Grey Mountains: Caverns of Thrumfall',
+		'event109' => 'Grey Mountains: Glimmerdeep',
+		'event110' => 'Grey Mountains: Thikil-gundun',
+		'event111' => 'Grey Mountains: The Anvild of Winterstith',
 	),
 );
 ?>

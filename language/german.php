@@ -327,6 +327,10 @@ $german_array = array(
 		'event105' => 'Ebene von Gorgoroth: Der Hof von Seregost',
 		'event106' => 'Ebene von Gorgoroth: Die Verliese von Naerband',
 		'event107' => 'Ebene von Gorgoroth: Der Abgrund von Mordath',
+		'event108' => 'Graues Gebirge: Höglen des Thrumfall',
+		'event109' => 'Graues Gebirge: Funkenfeste',
+		'event110' => 'Graues Gebirge: Thikil-gundun',
+		'event111' => 'Graues Gebirge: Der Amboss der Winterschmiede',
 	),
 );
 ?>

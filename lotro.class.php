@@ -348,6 +348,10 @@ if(!class_exists('lotro')) {
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event105'), 0, "plateau_of_gorgoroth_seregost.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event106'), 0, "plateau_of_gorgoroth_naerband.png");
 			$arrEventIDs[] = $this->game->addEvent($this->glang('event107'), 0, "plateau_of_gorgoroth_mordath.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event108'), 0, "grey_mountains_thrumfall.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event109'), 0, "grey_mountains_glimmerdeep.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event110'), 0, "grey_mountains_thikil-gundun.png");
+			$arrEventIDs[] = $this->game->addEvent($this->glang('event111'), 0, "grey_mountains_winterstith.png");
 			$this->game->updateDefaultMultiDKPPool('Default', 'Default MultiDKPPool', $arrEventIDs);
 		}
 		//Guildbank
