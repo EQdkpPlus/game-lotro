@@ -316,6 +316,8 @@ $english_array = array(
 		'event118' => 'Minas Morgul: Ghashan-kútot, the Hall of Black Lore',
 		'event119' => 'Minas Morgul: The Fallen Kings',
 		'event120' => 'Minas Morgul: Remmorchant, the Net of Darkness',
+		'event121' => 'War of Three Peaks: Amdân Dammul, the Bloody Threshold',
+		'event122' => 'War of Three Peaks: Shakalush, the Stair Battle',
 	),
 );
 ?>

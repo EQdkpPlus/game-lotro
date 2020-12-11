@@ -340,6 +340,8 @@ $german_array = array(
 		'event118' => 'Minas Morgul: Ghashan-kútot, die Hallen des dunkelen Wissens',
 		'event119' => 'Minas Morgul: Die Gefallenen Könige',
 		'event120' => 'Minas Morgul: Remmorchant, das Netz der Finsterniss',
+		'event121' => 'Krieg der Drei Gipfel: Amdân Dammul, die Blutige Schwelle',
+		'event122' => 'Krieg der Drei Gipfel: Shakalush, die Stufenschlacht',
 	),
 );
 ?>
